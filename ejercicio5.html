@@ -1,0 +1,23 @@
+<script>
+let palabra = prompt("escribe la palabra")
+var palabratamaño = palabra;
+console.log(palabratamaño.length);
+            var posicion = palabratamaño.length - 1;
+            var palabraAlReves = "";
+            for(var i = 0; i < palabratamaño.length  ; i++){
+                console.log(palabratamaño.split(""));
+                var arreglo = palabratamaño.split("");
+                console.log(posicion);
+                
+                palabraAlReves += arreglo[posicion]
+                console.log(palabraAlReves);
+                posicion --
+               
+            }
+            if(palabraAlReves == palabra){
+                document.write("La palabra \"" + palabra+ "\" es un palíndromo y al reves se leería \"" + palabraAlReves + "\"")
+            }else{
+                document.write("La palabra \"" + palabra+ "\" es no es un palíndromo y al reves se leería \"" + palabraAlReves + "\"")
+
+            }
+</script>

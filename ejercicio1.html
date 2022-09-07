@@ -1,0 +1,38 @@
+<script>
+
+    let cine = prompt("digite la pelicula")
+    if (cine.length ===0){
+        alert("el campo esta vacio, recargar la pagina por favor")
+    }
+    else{
+    
+   switch (cine) {
+case 'batman':
+case 'superman':
+case 'spiderman':
+case 'estafa':
+case 'golden':
+case "boletos":
+    let dinero =prompt("digite el dinero")
+    let boletos =prompt("cuantos boletos")
+    resultado=dinero*boletos;
+    desc=boletos >5*0.5;
+    total=resultado-desc
+
+    document.write("el total es "+ resultado+" el descuento por si 5 boletas es " + desc + " total " + total);
+    break;
+    
+    default:
+        document.write('esta pelicula no esta');
+    break;
+    
+    }
+
+
+
+    
+   
+
+         
+    }
+ </script>

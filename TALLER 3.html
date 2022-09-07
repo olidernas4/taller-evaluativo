@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        let calculadora = prompt("Ingrese signo de la operacion que va a realizar resta (-), suma (+), división (/), multiplicación (*),  porcentaje (%) ");
+
+        switch (calculadora) {
+        case "+":
+            let num1 = prompt("Ingrese el digito");
+            let num2 = prompt("Ingrese siguiente digito");
+            let suma = parseInt(num1) + parseInt(num2);
+            alert("El resultado de la suma es: " + suma)
+            break;
+            case "-":
+            let nume1 = prompt("Ingrese el digito");
+            let nume2 = prompt("Ingrese siguiente digito");
+            let resta = parseInt(nume1) - parseInt(nume2);
+            alert("El resultado de la resta es: " + resta)
+            break;
+            case "*":
+            let numer1 = prompt("Ingrese el digito");
+            let numer2 = prompt("Ingrese siguiente digito");
+            let multi = parseInt(numer1) *  parseInt(numer2);
+            alert("El resultado de la multiplicacion  es: " + multi)
+            break;
+            case "/": 
+            let numero1 = prompt("Ingrese el digito");
+            let numero2 = prompt("Ingrese siguiente digito");
+            if (numero1 <= 0) {
+                alert("ingrese un numero mayor que 0");}
+                if (numero2 <= 0) {
+                alert("ingrese un numero mayor que 0");
+            }else{
+            let división = parseInt(numero1) / parseInt(numero2);
+            alert("El resultado de la division es: " + división);}
+            break;
+            case "%":
+            let number1 = prompt("Ingrese el digito");
+            let number2 = prompt("Ingrese el porcentaje que desea obtener");
+            let porcentaje = parseInt(number1)*parseInt(number2)/100 ;
+            alert("Su porcentaje es : " + porcentaje + "%")
+            break;
+            default:
+                alert("Ingrese una operacion actualiza la agina")
+
+            
+            
+            
+
+        }
+
+        
+
+
+
+
+    </script>
+
+</body>
+</html>
